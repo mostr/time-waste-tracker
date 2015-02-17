@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', run);
 
 function run() {
-  var countArea = document.querySelector('#count');
+  var countArea = document.querySelector('#data');
 
   chrome.storage.local.get('sites', (data) => {
     countArea.textContent = JSON.stringify(data.sites);
